@@ -1,0 +1,16 @@
+# this workflow will run nodejs coverages and tests
+# and upload build-artifacts to branch-gh-pages
+name: ci
+on:
+  push:
+    branches:
+      - alpha
+      - beta
+  workflow_dispatch:
+jobs:
+  job1:
+    runs-on: ubuntu-24.04
+    # runs-on: ubuntu-latest
+    steps:
+      - run: |
+          sudo apt-get install -y graphicsmagick
