@@ -13,5 +13,7 @@ jobs:
     # runs-on: ubuntu-latest
     steps:
       - run: |
-          command -v gm
+          # !! command -v gm
           # !! sudo apt-get install -y graphicsmagick
+          sudo apt update
+          sudo apt install graphicsmagick
